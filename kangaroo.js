@@ -1,17 +1,11 @@
 function kangaroo(x1, v1, x2, v2) {
-  if (x1 > x2 && v1 > v2) {
-    return 'NO';
+  let result = 'NO';
+  if ((x1 > x2 && v1 > v2) || (x1 < x2 && v1 < v2) || v1 == v2) {
+    return result;
   }
-  if (x1 < x2 && v1 < v2) {
-    return 'NO';
-  }
-  if (v1 === v2) return 'NO';
 
-  if ((x2 - x1) % (v1 - v2) === 0) return 'YES';
-  else return 'NO';
+  (x2 - x1) % (v1 - v2) === 0 ? (result = 'YES') : (result = 'NO');
+  return result;
 }
 
 console.log(kangaroo(0, 2, 5, 3));
-
-// if ((x2 > x1 && v2 < v1) || (x1 > x2 && v1 < v2)) return 'YES';
-// else return 'NO';

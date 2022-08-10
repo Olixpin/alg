@@ -14,4 +14,4 @@ function factorisation(n) {
   if (n > 2) console.log(n);
 }
 
-factorisation(50);
+factorisation(12);
