@@ -47,8 +47,8 @@ function studentGrading2(grades) {
     grade < 38
       ? grade
       : Math.ceil(grade / 5) * 5 - grade < 3
-        ? Math.ceil(grade / 5) * 5
-        : grade
+      ? Math.ceil(grade / 5) * 5
+      : grade
   );
 }
 console.log(studentGrading2([4, 73, 67, 38, 33]));

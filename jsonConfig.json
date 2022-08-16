@@ -10,4 +10,4 @@
   "exclude": ["node_modules", "**/node_modules/*"]
 }
 
-// use prettier to format the json file
+

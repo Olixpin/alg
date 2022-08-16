@@ -1,4 +1,4 @@
-import isPrime from "./index.mjs";
+import isPrime from './index.mjs';
 
 function primeLessThanN(n) {
   let arrNum = [];
@@ -6,7 +6,7 @@ function primeLessThanN(n) {
     arrNum.push(i);
   }
 
-  return arrNum.filter((n) => isPrime(n)).join(" ");
+  return arrNum.filter(n => isPrime(n)).join(' ');
 }
 
 console.log(primeLessThanN(10));

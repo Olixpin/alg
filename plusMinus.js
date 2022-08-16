@@ -11,7 +11,7 @@ function plusMinus(arr) {
 
   let value = [positive, negative, zero];
 
-  value = value.map((val) => (val.length / arr.length).toFixed(6));
+  value = value.map(val => (val.length / arr.length).toFixed(6));
 
   for (let i = 0; i < value.length; i++) {
     console.log(value[i]);
