@@ -20,3 +20,8 @@ const socksMerchant = (n, ar) => {
 };
 
 console.log(socksMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
+
+let myMap2 = new Map();
+myMap2.set(1, 2);
+
+console.log(myMap2.get(1) + 1);
